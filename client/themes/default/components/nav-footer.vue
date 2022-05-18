@@ -5,6 +5,7 @@
         span(v-if='contentLicense === `alr`') {{ $t('common:footer.copyright', { company: company, year: currentYear, interpolation: { escapeValue: false } }) }} |&nbsp;
         span(v-else) {{ $t('common:footer.license', { company: company, license: $t('common:license.' + contentLicense), interpolation: { escapeValue: false } }) }} |&nbsp;
       span {{ $t('common:footer.poweredBy') }} #[a(href='https://wiki.js.org', ref='nofollow') Wiki.js]
+      span {{ 鄂ICP备2022008030号-1 }}#[a(href='https://beian.miit.gov.cn/', ref='nofollow') ]
 </template>
 
 <script>
